@@ -11,10 +11,10 @@ import java.util.Map;
 @RestController
 @CrossOrigin("http://localhost:4200")
 @RequestMapping("/bin")
-//
+
 public class BinController {
     private final BinService binService;
-//
+
     public BinController(BinService binService) {
         this.binService = binService;
     }

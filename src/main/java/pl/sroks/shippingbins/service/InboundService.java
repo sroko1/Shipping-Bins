@@ -54,7 +54,7 @@ public class InboundService {
                     .build();
             supplierRepository.save(supplier);
         }
-// here
+
         if (binRepository.findBinByName(inboundDto.getBin().getName()) == null) {
             Bin bin = Bin.builder()
                     .id(inboundDto.getBin().getId())
