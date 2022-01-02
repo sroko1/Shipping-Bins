@@ -1,0 +1,21 @@
+
+body {
+  background-image: url('src/assets/img/sunnyroad.jpg');
+  background-size: cover;
+  display: flex;
+  min-height:900px;
+  flex-wrap: wrap;
+  position:page;
+  font-weight:bolder;
+
+
+
+}
+
+header {
+  width: 100%;
+}
+
+
+
+
