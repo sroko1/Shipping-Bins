@@ -32,6 +32,7 @@ public class TruckService {
         }
         Truck truck = TruckConverter.convertToTruck(truckDto);
         truck.setId(truck.getId());
+        truck.setRegNumber(truck.getRegNumber());
         truckRepository.save(truck);
         return TruckConverter.convertToTruckDto(truck);
     }

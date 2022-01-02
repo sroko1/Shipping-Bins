@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {DatePipe} from "@angular/common";
 import {Bin} from "../bin/bin.component";
 import {Truck} from "../truck/truck.component";
 import {HttpClient} from "@angular/common/http";
@@ -29,7 +28,7 @@ export class Inbound {
 export class InboundComponent implements OnInit {
 
   inbounds: Inbound[];
-  closeResult: string;
+  closeResult: string
   editForm: FormGroup;
   private deleteId: number;
 

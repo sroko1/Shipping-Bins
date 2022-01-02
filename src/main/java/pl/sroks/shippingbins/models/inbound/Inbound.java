@@ -37,6 +37,7 @@ public class Inbound implements Serializable {
     @ManyToOne
     private Bin bin;
     @ManyToOne
+    //@JoinColumn(name = "ID",insertable = false, updatable = false)
     private Truck truck;
     @ManyToOne
     private Supplier supplier;

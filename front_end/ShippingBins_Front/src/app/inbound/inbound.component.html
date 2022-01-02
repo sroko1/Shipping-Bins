@@ -71,27 +71,27 @@
         </div>
       </div>
       <div class="form-group">
-        <label for="arrived">Arrived</label>
+       <label for="arrived">Arrived</label>
+       <div class="input-group">
+         <input id="arrived" name="arrived" class="form-control" ngModel>
+       </div>
+     </div>
+     <div class="form-group" ngModelGroup="bin">   <!-- Added ngModelGroup="bin" -->
+        <label for="bin.name">Bin Name</label>
         <div class="input-group">
-          <input id="arrived" name="arrived" class="form-control" ngModel>
+          <input id="bin.name" name="name" class="form-control" ngModel>  <!-- Updated name attribute value  -->
         </div>
       </div>
-      <div class="form-group">
-        <label for="bin">Bin Name</label>
-        <div class="input-group">
-          <input id="bin" name="bin.name" class="form-control" ngModel>
-        </div>
-      </div>
-      <div class="form-group">
+      <div class="form-group" ngModelGroup="truck">  <!-- Added ngModelGroup="truck" -->
         <label for="truck.regNumber">Truck Reg Number</label>
         <div class="input-group">
-          <input id="truck.regNumber" name="truck.regNumber" class="form-control" ngModel>
+          <input id="truck.regNumber" name="regNumber" class="form-control" ngModel>  <!-- Updated name attribute value  -->
         </div>
       </div>
-      <div class="form-group">
+      <div class="form-group" ngModelGroup="supplier">  <!-- Added ngModelGroup="supplier" -->
         <label for="supplier.name">Supplier Name</label>
         <div class="input-group">
-          <input id="supplier.name" name="supplier.name" class="form-control" ngModel>
+          <input id="supplier.name" name="name" class="form-control" ngModel>  <!-- Updated name attribute value  -->
         </div>
       </div>
       <div class="border text-center">
@@ -201,19 +201,19 @@
           <input formControlName="arrived" class="form-control">
         </div>
       </div>
-      <div class="form-group">
-        <label for="bin">Bin Name</label>
+      <div class="form-group" ngModelGroup="bin">
+        <label for="bin.name">Bin Name</label>
         <div class="input-group">
-          <input formControlName="bin.name" class="form-control">
+          <input formControlName="name" class="form-control">
         </div>
       </div>
-      <div class="form-group">
+      <div class="form-group" ngModelGroup="truck">
         <label for="truck.regNumber">Truck Reg Number</label>
         <div class="input-group">
-          <input formControlName="truck.regNumber" class="form-control">
+          <input formControlName="regNumber" class="form-control">
         </div>
       </div>
-      <div class="form-group">
+      <div class="form-group" ngModelGroup="supplier">
         <label for="supplier.name">Supplier Name</label>
         <div class="input-group">
           <input formControlName="supplier.name" class="form-control">
