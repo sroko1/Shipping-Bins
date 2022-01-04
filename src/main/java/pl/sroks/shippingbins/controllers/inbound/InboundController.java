@@ -33,8 +33,8 @@ public class InboundController {
     }
 
     @PatchMapping("/{id}/updateInbound")
-    public InboundDto updateInbound(@PathVariable int id, @RequestBody Map<Object, Object> fields) {
-        return inboundService.updateInbound(id, fields);
+    public InboundDto updateInbound(@PathVariable int id,@RequestBody InboundDto inboundDto) {
+        return inboundService.updateInbound(id, inboundDto);
     }
 
     @DeleteMapping("/{id}/deleteInbound")
